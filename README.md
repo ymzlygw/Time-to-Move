@@ -44,6 +44,7 @@
   - [Stable Video Diffusion](#stable-video-diffusion)
 - [Generate Your Own Cut-and-Drag Examples](#generate-your-own-cut-and-drag-examples)
   - [GUI guide](GUIs/README.md)
+- [Community Adoption](#community-adoption)
 - [TODO](#todo)
 - [BibTeX](#bibtex)
 
@@ -142,6 +143,14 @@ pip install PySide6 opencv-python numpy imageio imageio-ffmpeg
 python GUIs/cut_and_drag.py
 ```
 <br>
+
+
+## Community Adoption
+- [ComfyUI – WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) by [@kijai](https://github.com/kijai): native TTM nodes and an example Wan 2.2 I2V workflow.
+- [Wan 2.2 Time-To-Move ComfyUI Guide](https://www.youtube.com/watch?v=NcuUR7hrn-Q): YouTube tutorial by **Benji’s AI Playground**.
+  
+If you are using TTM in your own project or product, feel free to open a PR to add it to this section.
+
 
 ### TODO 🛠️
 
