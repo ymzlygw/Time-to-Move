@@ -149,7 +149,8 @@ python GUIs/cut_and_drag.py
 - [ComfyUI – WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) by [@kijai](https://github.com/kijai): native TTM nodes and an example Wan 2.2 I2V workflow.
 - [Wan 2.2 Time-To-Move ComfyUI Guide](https://www.youtube.com/watch?v=NcuUR7hrn-Q): YouTube tutorial by **Benji’s AI Playground**.
 - [ComfyUI – WanVideoWrapper spline editor](https://github.com/siraxe/ComfyUI-WanVideoWrapper_QQ) by [@siraxe](https://github.com/siraxe): keyframe-based editor and input-video assembly tool.
-  
+- [AI is finally controllable! ComfyUI Workflow + Tutorial](https://www.youtube.com/watch?v=pUb58eAZ3pc) by Mickmumpitz: TTM driven by real-world “stick/puppet” motion footage.
+
 If you are using TTM in your own project or product, feel free to open a PR to add it to this section.
 
 
