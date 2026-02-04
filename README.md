@@ -9,6 +9,8 @@
 </p>
 <p align="center"><sup>†</sup> Equal contribution</p>
 
+<p align="center"><b><span style="color:#3b82f6;">Accepted to ICLR 2026!</span></b></p>
+
 <p align="center">
   <a href="https://time-to-move.github.io/">
     <img src="assets/logo_page.svg" alt="Project Page" width="125">
