@@ -146,6 +146,16 @@ python GUIs/cut_and_drag.py
 ```
 <br>
 
+## Generate Your Own Camera-Control Examples
+We provide a GUI for creating camera-control examples using depth-based 3D reprojection. The tool uses [Apple's Depth Pro](https://github.com/apple/ml-depth-pro) for metric depth estimation. See the [GUI guide](GUIs/README.md) for details.
+
+To get started:
+```bash
+pip install PySide6 opencv-python numpy imageio imageio-ffmpeg
+pip install git+https://github.com/apple/ml-depth-pro.git
+python GUIs/camera_control.py
+```
+<br>
 
 ## Community Adoption
 - [ComfyUI – WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) by [@kijai](https://github.com/kijai): native TTM nodes and an example Wan 2.2 I2V workflow.
@@ -165,6 +175,7 @@ If you are using TTM in your own project or product, feel free to open a PR to a
 - [x] Camera-control examples
 - [x] Cut-and-Drag GUI
 - [x] Cut-and-Drag GUI guide
+- [x] Camera Control GUI
 - [ ] Evaluation code
 
  

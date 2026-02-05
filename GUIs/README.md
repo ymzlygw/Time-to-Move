@@ -1,7 +1,16 @@
+# GUIs for Time-to-Move
+
+We provide two GUIs to generate motion control signals for video generation using **Time-to-Move**:
+
+1. **Cut and Drag GUI** — For object motion control (cut polygons and drag them)
+2. **Camera Control GUI** — For camera motion control (3D camera movements using depth)
+
+---
+
 # Cut and Drag GUI
 
-We provide a GUI to generate cut-and-drag examples that will later be used for video generation given this input signal using **Time to Move**!  
-Given an input frame, you can cut and drag polygons from the initial image, transform their colors, and also add external images that can be dragged into the initial scene.
+Generate cut-and-drag examples for object motion control.
+Given an input frame, you can cut and drag polygons from the initial image, transform their colors, and add external images that can be dragged into the scene.
 
 ## ✨ General Guide
 - Select an initial image.
@@ -27,11 +36,11 @@ python cut_and_drag.py
 ## 🖱️ How to Use
 * Select Image — Click 🖼️ Select Image and choose an image.
     * Choose Center Crop / Center Pad at the top of the toolbar if needed.
-* Add a Polygon “cutting” the part of the image by clicking Add Polygon.
+* Add a Polygon "cutting" the part of the image by clicking Add Polygon.
     * Left-click to add points.
     * After finishing drawing the polygon, press ✅ Finish Polygon Selection.
 * Drag to move the polygon
-    * During segments you’ll see corner circles and a top dot which can be used for scaling and rotating during the segments; in the video the shape is interpolated between the initial frame status and the final segment one.
+    * During segments you'll see corner circles and a top dot which can be used for scaling and rotating during the segments; in the video the shape is interpolated between the initial frame status and the final segment one.
     * Also, color transformation can be applied (using hue transformation) in the segments to change polygon colors.
     * Click 🎯 End Segment to capture the segment annotated.
     * The movement trajectory can be constructed from multiple segments: repeat move → 🎯 End Segment → move → 🎯 End Segment…
@@ -47,14 +56,64 @@ python cut_and_drag.py
     * Click 💾 Save, choose an output folder and then enter a subfolder name.
     * Click 🆕 New to start a new project.
 
-## Output Files
-* first_frame.png — the initial frame for video generation
-* motion_signal.mp4 — the reference warped video
-* mask.mp4 — grayscale mask of the motion
-* prompt.txt — your prompt text
+---
 
+# Camera Control GUI
+
+Generate camera motion signals using depth-based 3D reprojection.
+Given an input image, depth is estimated automatically using [Depth Pro](https://github.com/apple/ml-depth-pro), and you can control camera pose interactively to create camera motion trajectories.
+
+## ✨ Features
+- Automatic depth estimation using Depth Pro
+- Interactive 3D camera control (rotation + translation)
+- Keyframe-based animation with real-time trajectory visualization
+- Preview camera motion in-app
+
+## 🧰 Requirements
+Install dependencies:
+```bash
+pip install PySide6 opencv-python numpy imageio imageio-ffmpeg torch
+pip install git+https://github.com/apple/ml-depth-pro.git
+pip install hf_transfer  # Optional: faster model download
+```
+
+## 🚀 Run
+```bash
+python camera_control.py
+```
+
+## 🖱️ How to Use
+* Select Image — Click 📁 Select Image (depth is estimated automatically)
+* Navigate the 3D scene:
+    * **Mouse drag**: Rotate view (pitch/yaw)
+    * **Mouse wheel**: Zoom in viewing direction
+    * **W/S**: Move forward/backward
+    * **A/D**: Strafe left/right
+    * **Q/E**: Move up/down
+    * **Arrow keys**: Rotate view
+    * **R**: Reset view
+* Add Keyframes — Right-click or click 🎯 Add Keyframe at desired camera poses
+* Preview — Click ▶️ Play Demo to preview the interpolated motion
+* Export — Click 💾 Save Output, choose folder and subfolder name
+
+---
+
+# Output Files
+
+Both GUIs produce the same output format for Time-to-Move:
+
+| File | Description |
+|------|-------------|
+| `first_frame.png` | Initial frame for video generation |
+| `motion_signal.mp4` | Reference warped video (motion signal) |
+| `mask.mp4` | Grayscale mask indicating motion regions |
+| `prompt.txt` | Text prompt for video generation |
+| `transformations/` | (Camera Control only) Per-frame camera transforms as JSON |
+
+---
 
 ## 🧾 License / Credits
-Built with PySide6, OpenCV, and NumPy.
-You own the images and exports you create with this tool.
+Built with PySide6, OpenCV, NumPy, and PyTorch.
+Camera Control uses [Depth Pro](https://github.com/apple/ml-depth-pro) for depth estimation.
+You own the images and exports you create with these tools.
 Motivation for creating an easy-to-use tool from [Go-With-The-Flow](https://github.com/GoWithTheFlowPaper/gowiththeflowpaper.github.io).
