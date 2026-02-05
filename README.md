@@ -45,6 +45,7 @@
   - [CogVideoX](#cogvideox)
   - [Stable Video Diffusion](#stable-video-diffusion)
 - [Generate Your Own Cut-and-Drag Examples](#generate-your-own-cut-and-drag-examples)
+- [Generate Your Own Camera-Control Examples](#generate-your-own-camera-control-examples)
   - [GUI guide](GUIs/README.md)
 - [Community Adoption](#community-adoption)
 - [TODO](#todo)
@@ -176,6 +177,7 @@ If you are using TTM in your own project or product, feel free to open a PR to a
 - [x] Cut-and-Drag GUI
 - [x] Cut-and-Drag GUI guide
 - [x] Camera Control GUI
+- [x] Camera Control GUI guide
 - [ ] Evaluation code
 
  
