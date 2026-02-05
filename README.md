@@ -46,7 +46,6 @@
   - [Stable Video Diffusion](#stable-video-diffusion)
 - [Generate Your Own Cut-and-Drag Examples](#generate-your-own-cut-and-drag-examples)
 - [Generate Your Own Camera-Control Examples](#generate-your-own-camera-control-examples)
-  - [GUI guide](GUIs/README.md)
 - [Community Adoption](#community-adoption)
 - [TODO](#todo)
 - [BibTeX](#bibtex)
