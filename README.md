@@ -142,7 +142,7 @@ python run_svd.py \
 We provide an easy-to-use GUI for creating cut-and-drag examples that can later be used for video generation in **Time-to-Move**. We recommend reading the [GUI guide](GUIs/README.md) before using it.
 
 <p align="center">
-  <img src="assets/gui.png" alt="Cut-and-Drag GUI Example" width="400">
+  <img src="assets/obj_gui.png" alt="Cut-and-Drag GUI Example" width="400">
 </p>
 
 To get started quickly, create a new environment and run:
@@ -154,6 +154,10 @@ python GUIs/cut_and_drag.py
 
 ## Generate Your Own Camera-Control Examples
 We provide a GUI for creating camera-control examples using depth-based 3D reprojection. The tool uses [Apple's Depth Pro](https://github.com/apple/ml-depth-pro) for metric depth estimation. See the [GUI guide](GUIs/README.md) for details.
+
+<p align="center">
+  <img src="assets/cam_gui.jpg" alt="Camera-Control GUI Example" width="400">
+</p>
 
 To get started:
 ```bash
