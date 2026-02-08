@@ -141,7 +141,7 @@ We provide an easy-to-use GUI for creating cut-and-drag examples that can later 
 
 To get started quickly, create a new environment and run:
 ```bash
-pip install PySide6 opencv-python numpy imageio imageio-ffmpeg
+pip install PySide6 opencv-python==4.10.0.82 numpy==1.26.4 imageio imageio-ffmpeg torch
 python GUIs/cut_and_drag.py
 ```
 <br>

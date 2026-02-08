@@ -72,7 +72,7 @@ Given an input image, depth is estimated automatically using [Depth Pro](https:/
 ## 🧰 Requirements
 Install dependencies:
 ```bash
-pip install PySide6 opencv-python numpy imageio imageio-ffmpeg torch
+pip install PySide6 opencv-python==4.10.0.82 numpy==1.26.4 imageio imageio-ffmpeg torch
 pip install git+https://github.com/apple/ml-depth-pro.git
 pip install hf_transfer  # Optional: faster model download
 ```
