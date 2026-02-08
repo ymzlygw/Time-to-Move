@@ -39,6 +39,7 @@
 
 ## Table of Contents
 
+- [News](#news)
 - [Inference](#inference)
   - [Dual Clock Denoising Guide](#dual-clock-denoising)
   - [Wan](#wan)
@@ -49,6 +50,11 @@
 - [Community Adoption](#community-adoption)
 - [TODO](#todo)
 - [BibTeX](#bibtex)
+
+## News
+
+- **Accepted to ICLR 2026!**
+- **Camera-Control GUI released**: see [Generate Your Own Camera-Control Examples](#generate-your-own-camera-control-examples) and [GUI guide](GUIs/README.md).
 
 
 ## Inference
