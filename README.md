@@ -147,7 +147,7 @@ We provide an easy-to-use GUI for creating cut-and-drag examples that can later 
 
 To get started quickly, create a new environment and run:
 ```bash
-pip install PySide6 opencv-python==4.10.0.82 numpy==1.26.4 imageio imageio-ffmpeg torch
+pip install PySide6 opencv-python numpy imageio imageio-ffmpeg
 python GUIs/cut_and_drag.py
 ```
 <br>
@@ -161,7 +161,7 @@ We provide a GUI for creating camera-control examples using depth-based 3D repro
 
 To get started:
 ```bash
-pip install PySide6 opencv-python numpy imageio imageio-ffmpeg
+pip install PySide6 opencv-python==4.10.0.82 numpy==1.26.4 imageio imageio-ffmpeg torch
 pip install git+https://github.com/apple/ml-depth-pro.git
 python GUIs/camera_control.py
 ```
